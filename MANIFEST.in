@@ -1,0 +1,21 @@
+# 明确指定源码文件
+recursive-include flash_mineru *.py
+recursive-include flash_mineru *.json
+recursive-include flash_mineru *.yaml
+recursive-include flash_mineru *.sh
+recursive-include flash_mineru *.txt
+
+# 包含样例文件夹下所有类型的文件
+# 样例文件夹路径为flash_mineru/exaple
+recursive-include flash_mineru/example */
+
+# 包含顶层文档文件
+include README.md
+include requirements.txt
+include LICENSE
+
+# 排除无用缓存文件
+global-exclude *.py[cod]
+global-exclude __pycache__/
+global-exclude *.so
+global-exclude *.egg-info/
